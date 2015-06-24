@@ -4,3 +4,9 @@ Book.create [
   { isbn: '0440238153', author: 'Phillip Pullman', title: 'The Amber Spyglass: His Dark Materials', price: 6750 },
   { isbn: '0345325818', author: 'J.R.R. Tolkien', title: 'The Silmarillion', price: 5980 },
 ]
+
+List.create [
+  { name: 'sneakers', category: 'shoes', price: 9999 },
+  { name: 'baseball', category: 'sports', price: 1095},
+  { name: 'pen', category: 'office', price: 200}
+]

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     resources :books, except: :edit
+    resources :lists
   end
 
   get ':id' => 'welcome#index'

@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-sm-12">
+    <header class="page-header">
+      <h2>Lists</h2>
+    </header>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="remove-col"></th>
+          <th class="list-col">Title</th>
+          <th class="category-col">Category</th>
+          <th class="price-col">Price</th>
+          <th class="action-col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr list-row list="list" removelist="removeList(list)" ng-repeat="list in lists"></tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            <div class="pull-right">
+              <a ng-href="/list/new" class="btn btn-primary">New List</a>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

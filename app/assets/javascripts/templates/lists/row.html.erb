@@ -1,0 +1,10 @@
+<td class="remove-col">
+  <a href class="text-danger" ng-click="removeList(list)"><i class="glyphicon glyphicon-remove"></i></a>
+</td>
+<td class="list-col">{{list.name}}</td>
+<td class="category-col">{{list.category}}</td>
+
+<td class="price-col">$ {{list.price / 1000 | number : 2}}</td>
+<td class="action-col">
+  <a ng-href="/{{list.id}}"><i class="glyphicon glyphicon-pencil"></i></a>
+</td>

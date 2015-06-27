@@ -2,10 +2,14 @@
 #= require templates/books/form
 #= require controllers/books-controller
 #= require templates/books/about
+#= require templates/lists/index
+#= require templates/lists/form
+#= require controllers/lists-controller
+
 
 
 var app;
-app = angular.module('app', ['ngRoute', 'booksController', 'templates']);
+app = angular.module('app', ['ngRoute', 'booksController','listsController', 'templates']);
 app.config([
   '$routeProvider', '$locationProvider', '$httpProvider', function($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider.when('/', {
@@ -17,6 +21,12 @@ app.config([
     }).when('/about', {
       templateUrl: 'books/about.html',
       controller: 'AboutController'
+    }).when('/list', {
+      templateUrl: 'lists/index.html',
+      controller: 'ListsController'
+    }).when('/list/:id', {
+      templateUrl: 'lists/form.html',
+      controller: 'ListController'
     }).otherwise({
       redirectTo: '/'
     });

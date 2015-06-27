@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'responders', '~> 2.0'
 gem 'pg'
 gem 'rails-html-sanitizer', '~> 1.0'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug'
